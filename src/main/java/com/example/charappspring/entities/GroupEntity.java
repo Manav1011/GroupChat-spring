@@ -11,6 +11,15 @@ public class GroupEntity {
 
     private String group_id;
     private String group_title;
+    private String description;
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
 
     public Long getId() {
         return id;

@@ -1,20 +1,20 @@
 package com.example.charappspring.models;
 
 public class Message {
-    private String name;
+    private String identity;
     private String content;
 
     public Message(String name, String content) {
-        this.name = name;
+        this.identity = name;
         this.content = content;
     }
 
-    public String getName() {
-        return name;
+    public String getIdentity() {
+        return identity;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setIdentity(String identity) {
+        this.identity = identity;
     }
 
     public String getContent() {

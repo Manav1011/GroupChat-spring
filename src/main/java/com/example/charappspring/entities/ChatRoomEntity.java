@@ -10,7 +10,15 @@ public class ChatRoomEntity {
     private Long id;
 
     private String room_id;
-    private int group_id;
+
+
+
+    @Column(name = "group_id") // This annotation specifies the column name
+    private Long groupId;
+
+    public void setGroupId(Long groupId) {
+        this.groupId = groupId;
+    }
 
     public Long getId() {
         return id;
@@ -28,11 +36,4 @@ public class ChatRoomEntity {
         this.room_id = room_id;
     }
 
-    public int getGroup_id() {
-        return group_id;
-    }
-
-    public void setGroup_id(int group_id) {
-        this.group_id = group_id;
-    }
 }
